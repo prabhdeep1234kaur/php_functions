@@ -171,4 +171,54 @@ echo "<h2>gettype : Get the type of a variable </h2>";
 
 $getTypeVar = 3;
 echo gettype($getTypeVar) . "<br>";
+
+
+
+
+/***
+ * 
+ * 
+ * Ceil : Rounds up float value to next int
+ * 
+ */
+
+echo "<h2>Ceil : Rounds up float value to next int </h2>";
+
+$ceilNum = 4.44;
+echo(ceil($ceilNum) . "<br>");
+
+
+
+/**
+ * 
+ * 
+ * htmlentities() : Convert some characters to HTML entities:
+ * 
+ */
+echo "<h2>htmlentities() : Convert some characters to HTML entities </h2>";
+$strEntity = '<a href="google.com">Google it</a>';
+echo htmlentities($strEntity); // in view source : &lt;a href=&quot;https://www.w3schools.com&quot;&gt;Go to w3schools.com&lt;/a&gt;
+
+/**
+ * 
+ * include : include specific file
+ * 
+ * 
+ */
+echo "<h2>include : include specific file : will only produce a warning (E_WARNING) and the script will continue
+</h2>";
+include 'for-include-require.php';
+
+
+/**
+ * 
+ * require : include specific file
+ * 
+ * 
+ */
+echo "<h2>require : include specific file : will produce a fatal error (E_COMPILE_ERROR) and stop the script
+</h2>";
+require 'for-include-require.php';
+
+
 ?>
